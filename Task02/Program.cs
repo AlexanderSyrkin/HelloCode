@@ -14,7 +14,3 @@ else
     Console.WriteLine(number2);
 }
 
-//string numeberА = int.Parse(Console.ReadLine());
-//string number1 = Console.ReadLine();
-//Console.Write("Введите цифру № 2: ");
-//string number2 = Console.ReadLine();
