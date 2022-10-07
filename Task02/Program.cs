@@ -5,7 +5,7 @@ Console.Write("Введите цифру № 1: ");
 int number1 = int.Parse(Console.ReadLine());
 Console.Write("Введите цифру № 2: ");
 int number2 = int.Parse(Console.ReadLine());
-if (number1 > number2);
+if (number1 > number2)
 {
     Console.WriteLine(number1);
 }
