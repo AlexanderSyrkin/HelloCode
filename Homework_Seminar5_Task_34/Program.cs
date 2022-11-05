@@ -27,24 +27,3 @@ void Chetnoe(int[] array)
     }
 Console.WriteLine($" -> {chetnoe}.");
 }
-
-
-
-
-
-
-
-
-
-/* int chetnoe = 0;
-    
-foreach (int el in array)
-{
-    if (el % 2 == 0)
-        chetnoe++; 
-}
-
-Console.WriteLine($" -> {chetnoe}.");
- */
-
-
