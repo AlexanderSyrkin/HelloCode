@@ -7,27 +7,27 @@
 void Main()
 {
     Console.WriteLine("Введите число: ");
-    int a = int.Parse(Console.ReadLine()!);
-    Number(a);
+    int n = int.Parse(Console.ReadLine()!);
+    Number(n);
     Console.ReadLine();
 }
 
-void Number(int a)
+void Number(int n)
 {
-    if (a <= 1)
+    if (n <= 1)
         return;
     else
     {
-        if (a % 2 == 0)
+        if (n % 2 == 0)
         {
-            Console.Write($"{a}, ");
-            Number(a - 2);
+            Console.Write($"{n}, ");
+            Number(n - 2);
         }
         else
         {
-            a--;
-            Console.Write($"{a}, ");
-            Number(a - 2);
+            n--;
+            Console.Write($"{n}, ");
+            Number(n - 2);
         }
     }
 }
