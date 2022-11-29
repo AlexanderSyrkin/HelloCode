@@ -7,26 +7,27 @@
 void Main()
 {
     Console.WriteLine("Введите число N");
-    int a= int.Parse(Console.ReadLine()!);
+    int n = int.Parse(Console.ReadLine()!);
 
     Console.WriteLine("Введите число M ");
-    int b = int.Parse(Console.ReadLine()!);
+    int m = int.Parse(Console.ReadLine()!);
 
-    Console.Write("A(b,a) = ");
-    Console.WriteLine(Akkerman(a, b));
+    Console.Write("A(m,n) => ");
+    Console.WriteLine(Akkerman(n, m));
 }
 
-int Akkerman(int b, int a)
+int Akkerman(int m, int n)
 {
-    if (b <= 0)
-        return a+ 1;
+    if (m <= 0)
+        return n + 1;
     else
     {
-        if (b > 0 && a<= 0)
-            return Akkerman(b - 1, 1);
-        else if (b > 0 && a> 0)
-            return Akkerman(b - 1, Akkerman(b, a- 1));
+        if (m > 0 && n <= 0)
+            return Akkerman(m - 1, 1);
+        else if (m > 0 && n > 0)
+            return Akkerman(m - 1, Akkerman(m, n - 1));
         return 0;
     }
 }
+
 Main();
